@@ -1,0 +1,79 @@
+<!-- Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Personaje</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-light">
+    <section class="container">
+        <h1 class="h1 text-center mt-4">CREA TU PERSONAJE👸🏽🤴🏽</h1>
+    <form>
+<div class="mb-3">
+  <label for="nombrePersonaje" class="form-label">Nombre</label>
+  <input type="text" class="form-control" id="nombrePersonaje">
+</div>
+<div class="mb-3">
+  <label for="edadPersonaje" class="form-label">Edad</label>
+  <input type="number" class="form-control" id="edadPersonaje">
+</div>
+<div class="mb-3">
+  <label for="sexoPersonaje" class="form-label">Sexo</label>
+  <select class="form-select" aria-label="Default select example" id="sexoPersonaje">
+  <option selected>Selecciona una opcion</option>
+  <option value="1">Hombre 🤴🏽</option>
+  <option value="2">Mujer 👸🏽</option>
+  <option value="3">Otro 🧑🏽‍🦲</option>
+</select>
+</div>
+<div class="mb-3">
+  <label for="pesoPersonaje" class="form-label">Peso (kg)</label>
+  <input type="number" class="form-control" id="pesoPersonaje">
+</div>
+<div class="mb-3">
+  <label for="alturaPersonaje" class="form-label">Altura (cm)</label>
+  <input type="number" class="form-control" id="alturaPersonaje">
+</div>
+<div class="mb-3">
+  <label for="anioPersonaje" class="form-label">Año de nacimiento</label>
+  <input type="number" class="form-control" id="anioPersonaje">
+</div>
+<button class="btn btn-primary my-3" type="submit">Crear Personaje</button>
+</form>
+    </section>
+    <section class="container mb-3">
+                <h2 class="h2">PERSONAJE CREADO:</h2>
+        <article><ul class="list-group">
+            <li class="list-group-item" id="itemNombre"></li>
+            <li class="list-group-item" id="itemEdad"></li>
+            <li class="list-group-item" id="itemDni"></li>
+            <li class="list-group-item" id="itemSexo"> </li>
+            <li class="list-group-item" id="itemPeso"></li>
+            <li class="list-group-item" id="itemAltura"></li>
+            <li class="list-group-item" id="itemAnio"></li>
+          </ul></article>
+        <article> <div class="my-3">
+            <button class="btn btn-primary" type="button" id="GeneracionBoton">MOSTRAR GENERACION</button>
+<p id="parrafoGeneracion"></p>
+        </div>
+        <div>
+            <button class="btn btn-primary" type="button" id="mayorDeEdadBoton">ES MAYOR DE EDAD</button>
+            <p id="parrafoEdad"></p>
+            
+        </div></article>
+          
+        
+       
+        
+    </section>
+
+    <script src="generaciones.js"></script>
+    
+</body>
+</html>
