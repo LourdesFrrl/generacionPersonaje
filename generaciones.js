@@ -39,7 +39,6 @@ const crearPersonaje = (e) => {
   document.getElementById("itemAnio").textContent = `Año de nacimiento: ${personaCreada.añoNacimiento}`;
 };
 
-// Mostrar generación
 const mostrarGeneracion = () => {
   if (personaCreada) {
     let mensaje = "";
